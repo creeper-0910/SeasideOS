@@ -1,0 +1,20 @@
+LANGUAGE LANG_JAPANESE, SUBLANG_ENGLISH_US
+
+STRINGTABLE
+BEGIN
+    IDS_INCORRECT_PARAMETER_COUNT "パラメーターの値が正しくありません - %s\n"
+    IDS_INVALID_PARAMETER "パラメーターの値が正しくありません - %s\n"
+    IDS_INVALID_PARAMETER2 "無効なパラメーター - %s\n"
+    IDS_PATH_NOT_FOUND "パスが見つかりません - %s\n"
+    IDS_ACCESS_DENIED "アクセスが拒否されました - %s\n"
+    IDS_DRIVE_ALREADY_SUBSTED "ドライブは既に登録済みです\n"
+    IDS_FAILED_WITH_ERRORCODE "エラーコード 0x%x で失敗しました: %s\n"
+    IDS_USAGE "パスをドライブ文字に関連付けます。\n\n\
+SUBST [ドライブ1: [ドライブ2:]パス]\n\
+SUBST ドライブ1: /D\n\n\
+  ドライブ1:        パスを割り当てる仮想ドライブを指定します。\n\
+  [ドライブ2:]パス  割り当てる物理ドライブとパスを\n\
+                 指定します。\n\
+  /D             置換された（仮想）ドライブを削除します。\n\n\
+パラメーターなしでSUBSTと入力すると、現在の仮想ドライブのリストが表示されます。\n"
+END

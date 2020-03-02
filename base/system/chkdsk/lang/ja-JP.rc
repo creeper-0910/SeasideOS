@@ -1,0 +1,31 @@
+LANGUAGE LANG_JAPANESE, SUBLANG_ENGLISH_US
+
+STRINGTABLE
+BEGIN
+    IDS_USAGE "\n\
+使用法: %s [ドライブ:] [-F] [-V] [-R] [-C] \n\n\
+[ドライブ:]    チェックするドライブを指定します。\n\
+-F          ディスクのエラーを修正します。\n\
+-V          ディスク上の全てのファイル・フォルダーの完全なパスを表示します。\n\
+-R          不良セクタを特定し、読み取り可能な情報を回復します。\n\
+-C          ドライブが汚れている場合にのみチェックします。\n\
+\n"
+
+    IDS_PERCENT_COMPL "%d パーセントが完了しました\r"
+    IDS_FILE_SYSTEM "ファイル システムの種類は %s です\n"
+    IDS_ABOUT "\n\
+Mark RussinovichがChkdskx v1.0.1を作成しました\n\
+システム構造 - http://www.sysinternals.com\n\
+Emanuele Alibertiにより1999年にReactOSに最適化されました\n\n"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_VOLUME_IN_USE "ロックできません、ボリュームは使用中です。\n"
+    IDS_CHKDSK_FAIL "Chkdskは正常に完了できませんでした。\n\n"
+    IDS_NO_ENTRY_POINT "FMIFSエントリポイントが見つかりませんでした。\n\n"
+    IDS_BAD_ARGUMENT "不明な引数: %s\n"
+    IDS_NO_CURRENT_DIR "現在のディレクトリを取得できませんでした。エラーコード: "
+    IDS_NO_QUERY_VOL "ボリュームをクエリできませんでした。エラーコード: "
+    IDS_VOLUME_IN_USE_PROC "ボリュームが別のプロセスで使用されているため、Chkdskを実行できません。\n\n"
+END
