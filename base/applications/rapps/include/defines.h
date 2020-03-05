@@ -29,7 +29,7 @@
 #include "resource.h"
 #include "winmain.h"
 
-#define APPLICATION_DATABASE_URL L"https://rapps.reactos.org/rappmgr.cab"
+#define APPLICATION_DATABASE_URL L"https://github.com/creeper-0910/cab/raw/master/rappmgr.cab"
 #define MAX_STR_LEN              256
 
 enum AppsCategories

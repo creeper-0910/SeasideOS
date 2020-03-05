@@ -48,8 +48,8 @@
 #include "misc.h"
 
 #ifdef USE_CERT_PINNING
-#define CERT_ISSUER_INFO "US\r\nLet's Encrypt\r\nLet's Encrypt Authority X3"
-#define CERT_SUBJECT_INFO "rapps.reactos.org"
+#define CERT_ISSUER_INFO "US\r\nDigiCert Inc\r\nDigiCert SHA2 Extended Validation Server CA"
+#define CERT_SUBJECT_INFO "https://github.com"
 #endif
 
 enum DownloadStatus
