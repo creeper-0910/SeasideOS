@@ -2,21 +2,21 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 STRINGTABLE
 BEGIN
-    IDS_CAPTURE_MOUSE, "&マウスポインターをキャプチャ"
-    IDS_RELEASE_MOUSE, "&マウスポインターを解放"
+    IDS_CAPTURE_MOUSE, "&Capture Mouse Pointer"
+    IDS_RELEASE_MOUSE, "&Release Mouse Pointer"
     IDS_VDM_MENU     , "SeasideOS &VDM"
 END
 
 STRINGTABLE
 BEGIN
-    IDS_VDM_DUMPMEM_TXT ,   "ダンプメモリ (&テキスト)"
-    IDS_VDM_DUMPMEM_BIN ,   "ダンプメモリ (&バイナリ)"
-    IDS_VDM_MOUNT_FLOPPY,   "ドライブ %d <%s>にフロッピーディスクを挿入してください..."
-    IDS_VDM_EJECT_FLOPPY,   "Eドライブ %d からフロッピーディスクを排出"
-    IDS_VDM_QUIT        ,   "&SeasideOS VDMを終了"
+    IDS_VDM_DUMPMEM_TXT ,   "Dump Memory (&Text)"
+    IDS_VDM_DUMPMEM_BIN ,   "Dump Memory (&Binary)"
+    IDS_VDM_MOUNT_FLOPPY,   "Insert a floppy in drive %d <%s>..."
+    IDS_VDM_EJECT_FLOPPY,   "Eject floppy from drive %d"
+    IDS_VDM_QUIT        ,   "&Quit the SeasideOS VDM"
 END
 
 STRINGTABLE
 BEGIN
-    IDS_NO_MEDIA,   "メディアなし"
+    IDS_NO_MEDIA,   "No media"
 END
