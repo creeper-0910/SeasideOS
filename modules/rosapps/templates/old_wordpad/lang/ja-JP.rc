@@ -1,0 +1,169 @@
+LANGUAGE LANG_JAPANESE, SUBLANG_ENGLISH_US
+
+IDR_MAINMENU MENU
+BEGIN
+  POPUP "ファイル"
+  BEGIN
+    MENUITEM "新規...",         ID_NEW
+    MENUITEM "開く...",        ID_OPEN
+    MENUITEM SEPARATOR
+    MENUITEM "閉じる\tCtrl+F4", ID_CLOSE, GRAYED
+    MENUITEM "すべて閉じる",      ID_CLOSEALL, GRAYED
+    MENUITEM SEPARATOR
+    MENUITEM "保存",           ID_SAVE, GRAYED
+    MENUITEM "全て保存...",     ID_SAVEAS, GRAYED
+    MENUITEM SEPARATOR
+    MENUITEM "印刷のプレビュー",  ID_PRINTPRE, GRAYED
+    MENUITEM "印刷...",       ID_PRINT, GRAYED
+    MENUITEM SEPARATOR
+    MENUITEM "ページの設定...",  ID_PAGESETUP, GRAYED
+    MENUITEM SEPARATOR
+    MENUITEM "終了\tAlt+F4",   ID_EXIT
+  END
+  POPUP "編集"
+  BEGIN
+    MENUITEM "元に戻す",           ID_UNDO, GRAYED
+    MENUITEM "やり直し",           ID_REDO, GRAYED
+    MENUITEM SEPARATOR
+    MENUITEM "切り取り",            ID_CUT, GRAYED
+    MENUITEM "コピー",           ID_COPY, GRAYED
+    MENUITEM "貼付け",          ID_PASTE, GRAYED
+    MENUITEM SEPARATOR
+    MENUITEM "クリア",           -1, GRAYED
+    MENUITEM "すべて選択",     ID_SELALL, GRAYED
+    MENUITEM SEPARATOR
+    MENUITEM "検索...\tCtrl+F",-1, GRAYED
+    MENUITEM "次を検索",       -1, GRAYED
+    MENUITEM "置き換え\tCtrl+H", -1, GRAYED
+    MENUITEM SEPARATOR
+    MENUITEM "オブジェクトのプロパティ",-1, GRAYED
+    MENUITEM "オブジェクト",          -1, GRAYED
+  END
+  POPUP "&見る"
+  BEGIN
+    MENUITEM "ツールバー",        -1, CHECKED
+    MENUITEM "フォーマットバー",     -1, CHECKED
+    MENUITEM "ルーラー",          -1, CHECKED
+    MENUITEM "ステータスバー",     ID_STATUSBAR, CHECKED
+  END
+  POPUP "挿入"
+  BEGIN
+    MENUITEM "日時...",-1, GRAYED
+    MENUITEM "オブジェクト...",       -1, GRAYED
+  END
+  POPUP "&形式"
+  BEGIN
+    MENUITEM "フォント...",        -1 GRAYED
+    MENUITEM "バレットスタイル",     -1, GRAYED
+    MENUITEM "パラグラフ...",    -1, GRAYED
+    MENUITEM "タブ...",         -1, GRAYED
+  END
+  POPUP "ウィンドウ"
+  BEGIN
+    MENUITEM "カスケード",           ID_WINDOW_CASCADE
+    MENUITEM "タイルと水平方向", ID_WINDOW_TILE_HORZ
+    MENUITEM "タイルと垂直方向",   ID_WINDOW_TILE_VERT
+    MENUITEM "アイコンの配置",     ID_WINDOW_ARRANGE
+    MENUITEM SEPARATOR
+    MENUITEM "次へ\tCtrl+F6",     ID_WINDOW_NEXT
+  END
+  POPUP "ヘルプ"
+  BEGIN
+    MENUITEM "このソフトについて...",       ID_ABOUT
+  END
+END
+
+IDR_POPUP MENU
+BEGIN
+  POPUP "ポップアップ"
+  BEGIN
+
+    MENUITEM SEPARATOR
+
+  END
+END
+
+
+IDD_NEWDOCSEL DIALOGEX 6,6,159,67
+CAPTION "新規"
+FONT 8, "MS Shell Dlg",0,0
+STYLE DS_SHELLFONT | WS_BORDER | WS_DLGFRAME | DS_MODALFRAME
+BEGIN
+  LTEXT "新規ドキュメントタイプ:", IDC_STATIC, 4, 3, 72, 9
+  LISTBOX IDC_LIST, 4, 16, 104, 46, WS_TABSTOP
+  PUSHBUTTON "&OK", IDOK, 112, 16, 44, 13
+  PUSHBUTTON "キャンセル", IDCANCEL, 112, 33, 44, 13
+END
+
+
+IDD_ABOUTBOX DIALOGEX 22,16,190,182
+CAPTION "ワードパッドについて"
+FONT 8, "MS Shell Dlg",0,0
+STYLE DS_SHELLFONT | WS_BORDER | WS_DLGFRAME | WS_SYSMENU | DS_MODALFRAME
+BEGIN
+  LTEXT "ワードパッド II v0.1\n著作権 (C) 2006\nGed Murphy (gedmurphy@gmail.com)", IDC_STATIC, 48, 7, 150, 36
+  PUSHBUTTON "閉じる", IDOK, 65, 162, 44, 15
+  ICON IDI_ICON, IDC_STATIC, 10, 10, 7, 30
+  EDITTEXT IDC_LICENSE_EDIT, 8, 40, 174, 110, WS_VISIBLE | WS_VSCROLL | WS_TABSTOP | ES_READONLY | ES_MULTILINE
+END
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  IDS_LICENSE           "このプログラムはフリーソフトウェアです。FreeSoftware Foundationが公開するGNU General Public Licenseの条件に基づいて、再配布および/または変更できます。ライセンスのバージョン2または（オプションで）以降のバージョン。\r\n\r\nこのプログラムは、有用であることを期待して配布されていますが、商品性や特定の目的への適合性の暗黙の保証なしで、いかなる保証もありません。詳細については、GNU General Public Licenseを参照してください。\r\n\r\nこのプログラムと一緒にGNU General Public Licenseのコピーを受け取っているはずです。もしそうでなければ、フリーソフトウェア財団に連絡してください。, 675 Mass Ave, Cambridge, MA 02139, USA."
+  IDS_DEFAULT_NAME      "ドキュメント %1!u!"
+  IDS_READY             " 準備完了"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  IDS_DOC_TYPE_RICH_TEXT    "リッチテキストドキュメント"
+  IDS_DOC_TYPE_UNICODE_TEXT "テキストドキュメント"
+  IDS_DOC_TYPE_TEXT         "Unicodeテキストドキュメント"
+END
+
+
+
+/* Tooltips */
+STRINGTABLE DISCARDABLE
+BEGIN
+  IDS_TOOLTIP_NEW       "新規"
+  IDS_TOOLTIP_OPEN      "開く"
+  IDS_TOOLTIP_SAVE      "保存"
+  IDS_TOOLTIP_PRINTPRE  "印刷のプレビュー"
+  IDS_TOOLTIP_PRINT     "印刷"
+  IDS_TOOLTIP_CUT       "カット"
+  IDS_TOOLTIP_COPY      "・コピー"
+  IDS_TOOLTIP_PASTE     "ペースト"
+  IDS_TOOLTIP_UNDO      "もとに戻す"
+  IDS_TOOLTIP_REDO      "やり直し"
+END
+
+/* Hints */
+STRINGTABLE DISCARDABLE
+BEGIN
+  IDS_HINT_BLANK        " "
+  IDS_HINT_NEW          " 新しいドキュメントを作成します。"
+  IDS_HINT_OPEN         " 既存のドキュメントを開きます。"
+  IDS_HINT_CLOSE        " このウィンドウを閉じます。"
+  IDS_HINT_CLOSEALL     " すべてのウィンドウを閉じます。"
+  IDS_HINT_SAVE         " 編集中のドキュメントを保存します。"
+  IDS_HINT_SAVEAS       " 編集中のドキュメントを新しい名前で保存します。"
+  IDS_HINT_PRINT        " 編集中のドキュメントを印刷します。"
+  IDS_HINT_PRINTPRE     " 印刷するドキュメントをプレビューします。"
+  IDS_HINT_PAGESETUP    " ページレイアウト設定を変更します。"
+  IDS_HINT_EXIT         " このアプリケーションを終了します。"
+
+  IDS_HINT_CASCADE      " ウィンドウが重なるように配置します。"
+  IDS_HINT_TILE_HORZ    " ウィンドウを重複しないタイルとして配置します"
+  IDS_HINT_TILE_VERT    " ウィンドウを重複しないタイルとして配置します"
+  IDS_HINT_ARRANGE      " ウィンドウの下部にアイコンを配置します。"
+  IDS_HINT_NEXT         " 次のウィンドウをアクティブにします。"
+
+  IDS_HINT_SYS_RESTORE  " このウィンドウを通常のサイズに復元します。"
+  IDS_HINT_SYS_MOVE     " このウィンドウを移動します。"
+  IDS_HINT_SYS_SIZE     " このウィンドウのサイズを変更します。"
+  IDS_HINT_SYS_MINIMIZE " このウィンドウをアイコンに折りたたみます。"
+  IDS_HINT_SYS_MAXIMIZE " このウィンドウを拡大してこの画面いっぱいに表示します。"
+END
+

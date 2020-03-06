@@ -65,3 +65,6 @@ IDB_TEXTTOOLBAR BITMAP DISCARDABLE "res/toolbar.bmp"
 #ifdef LANGUAGE_ZH_CN
     #include "lang/zh-CN.rc"
 #endif
+#ifdef LANGUAGE_JA_JP
+    #include "lang/ja-JP.rc"
+#endif
