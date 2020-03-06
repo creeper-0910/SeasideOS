@@ -1,0 +1,32 @@
+// Japanese (JP) resources
+
+LANGUAGE LANG_JAPANESE, SUBLANG_ENGLISH_US
+
+STRINGTABLE DISCARDABLE
+BEGIN
+   IDS_APP_TITLE           "eksey Bragin <aleksey@reactos.org>によるコンソールタスクマネージャー"
+
+   IDS_COLUMN_NUMBER       "# "
+   IDS_COLUMN_IMAGENAME    "イメージ名                  "
+   IDS_COLUMN_PID          "PID  "
+   IDS_COLUMN_CPU          "CPU"
+   IDS_COLUMN_MEM          "メモリ使用量"
+   IDS_COLUMN_MEM_UNIT		"KB"
+   IDS_COLUMN_PF           "ページ違反"
+
+   IDS_IDLE_PROCESS        "システムアイドルプロセス"
+   IDS_YES                 "Y"
+   IDS_NO                  "N"
+
+   IDS_MENU                "入力: q - 終了, k - プロセスのキル"
+   IDS_MENU_QUIT           "Q"
+   IDS_MENU_KILL_PROCESS   "K"
+
+   IDS_KILL_PROCESS        "このプロセスを強制終了しますか？ (y/n)"
+   IDS_KILL_PROCESS_ERR1   "このプロセスを終了できません..."
+   IDS_KILL_PROCESS_ERR2   "プロセス %d を終了できません（OpenProcessにできません）"
+
+   IDS_CTM_GENERAL_ERR1    "ctm: コンソールを使用できません。"
+   IDS_CTM_GENERAL_ERR2    "ctm: 入力コンソールのGetConsoleMode（）はできません。"
+   IDS_CTM_GENERAL_ERR3    "ctm: 出力コンソールのGetConsoleMode（）はできません。"
+END

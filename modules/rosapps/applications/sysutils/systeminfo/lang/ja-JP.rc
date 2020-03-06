@@ -1,0 +1,72 @@
+LANGUAGE LANG_JAPANESE, SUBLANG_ENGLISH_US
+
+STRINGTABLE DISCARDABLE
+BEGIN
+
+IDS_USAGE, "SYSTEMINFO [/S system [/U username [/P [password]]]] [/FO format] [/NH]\n\n\
+Description:\n\
+  このコマンドラインツールを使用すると、管理者はシステム構成情報の基本的な\n\
+  クエリを実行できます。\n\n\
+Parameter List:\n\
+  /S      system           接続するリモートシステムを指定します。\n\n\
+  /U      [domain\\]user   ユーザーコンテキストを指定します。\n\
+                            コマンドを実行する必要があります。\n\n\
+  /P      [password]       指定のユーザーコンテキストのパスワードを入力します。\n\
+                           省略すると、入力を求められます。\n\n\
+  /FO     format           以下のリストから出力の形式を\n\
+                           指定します。\n\
+                           有効な値: ""TABLE"", ""LIST"", ""CSV"".\n\n\
+  /NH                       この引数は""Column Header"" を要求します。\n\
+                           これは出力されません。\n\
+                           これは ""TABLE"" 及び ""CSV"" フォーマットで有効です。\n\n\
+  /?                       現在表示されているヘルプ/使用法を表示します。\n\n\
+使用例:\n\
+  SYSTEMINFO\n\
+  SYSTEMINFO /?\n\
+  SYSTEMINFO /S system\n\
+  SYSTEMINFO /S system /U user\n\
+  SYSTEMINFO /S system /U domain\\user /P password /FO TABLE\n\
+  SYSTEMINFO /S system /FO LIST\n\
+  SYSTEMINFO /S system /FO CSV /NH\n"
+
+IDS_HOST_NAME,               "ホスト名"
+IDS_OS_NAME,                 "OS名"
+IDS_OS_VERSION,              "OSバージョン"
+IDS_BUILD,                   "ビルド"
+IDS_OS_BUILD_TYPE,           "OSのビルドタイプ"
+IDS_REG_OWNER,               "登録された所有者"
+IDS_REG_ORG,                 "登録された組織"
+IDS_PRODUCT_ID,              "製品ID"
+IDS_INST_DATE,               "インストール日時"
+IDS_UP_TIME,                 "システム稼働時間"
+IDS_UP_TIME_FORMAT,          "%u 日, %u 時間, %u 分, %u 秒"
+IDS_SYS_MANUFACTURER,        "システムメーカー"
+IDS_SYS_MODEL,               "システムモデル"
+IDS_SYS_TYPE,                "システムタイプ"
+IDS_PROCESSORS,              "プロセッサ"
+IDS_PROCESSORS_FORMAT,       "%u プロセッサーがインストールされています。"
+IDS_BIOS_DATE,               "BIOS日時"
+IDS_BIOS_VERSION,            "BIOSバージョン"
+IDS_ROS_DIR,                 "SeasideOSのディレクトリ"
+IDS_SYS_DIR,                 "Systemのディレクトリ"
+IDS_BOOT_DEV,                "ブートデバイス"
+IDS_SYS_LOCALE,              "システムロケール"
+IDS_INPUT_LOCALE,            "入力ロケール"
+IDS_TIME_ZONE,               "タイムゾーン"
+IDS_TOTAL_PHYS_MEM,          "合計物理メモリ"
+IDS_AVAIL_PHISICAL_MEM,      "使用可能な物理メモリ"
+IDS_VIRT_MEM_MAX,            "仮想メモリ：最大サイズ"
+IDS_VIRT_MEM_AVAIL,          "仮想メモリ：利用可能"
+IDS_VIRT_MEM_INUSE,          "仮想メモリ：使用中"
+IDS_PAGEFILE_LOC,            "ページファイルの場所"
+IDS_DOMAIN,                  "ドメイン"
+IDS_NETWORK_CARDS,           "ネットワークカード"
+IDS_NETWORK_CARDS_FORMAT,    "%u がインストールされました。"
+IDS_CONNECTION_NAME,         "接続名"
+IDS_STATUS,                  "ステータス"
+IDS_MEDIA_DISCONNECTED,      "メディアが切断されました"
+IDS_DHCP_ENABLED,            "DHCPが有効"
+IDS_NO,                      "いいえ"
+IDS_IP_ADDRESSES,            "IPアドレス"
+
+END

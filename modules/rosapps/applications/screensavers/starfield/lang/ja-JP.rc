@@ -1,0 +1,8 @@
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    IDS_DESCRIPTION "スターフィールドスクリーンセーバーr"
+    IDS_TITLE       "概要"
+    IDS_TEXT        "オプションを設定する必要はありません。"
+END
