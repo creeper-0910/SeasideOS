@@ -1,5 +1,5 @@
 /*
- * PROJECT:         ReactOS
+ * PROJECT:         SeasideOS
  * LICENSE:         GPL - See COPYING in the top level directory
  * FILE:            include/psdk/common.ver
  * PURPOSE:         Common Version File.
@@ -18,9 +18,9 @@
 //
 #ifndef VER_LEGALCOPYRIGHT_STR
 #if defined(RC_INVOKED) && !defined(WIN16)
-#define VER_LEGALCOPYRIGHT_STR L"\251 ReactOS Foundation. All rights reserved."
+#define VER_LEGALCOPYRIGHT_STR L"\251 SeasideOS Foundation. All rights reserved."
 #else
-#define VER_LEGALCOPYRIGHT_STR "Copyright (c) ReactOS Foundation. All rights reserved."
+#define VER_LEGALCOPYRIGHT_STR "Copyright (c) SeasideOS Foundation. All rights reserved."
 #endif
 #endif
 

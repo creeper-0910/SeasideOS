@@ -82,3 +82,6 @@ IDC_MONITORICO ICON "resources/monitor.ico"
 #ifdef LANGUAGE_ZH_TW
     #include "lang/zh-TW.rc"
 #endif
+#ifdef LANGUAGE_ja_JP
+    #include "lang/ja-JP.rc"
+#endif
